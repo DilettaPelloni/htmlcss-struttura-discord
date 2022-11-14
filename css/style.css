@@ -92,6 +92,13 @@ footer > hr {
     width: calc(100%/4);
 }
 
+.end-of-page {
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 
 
 
@@ -162,5 +169,15 @@ footer > hr {
     background-color: #20B2AA;
     border: 1px dashed white;
     min-height: 300px;
+}
+
+.debug .end-of-page {
+    background-color: #7FFFD4;
+}
+
+.debug .end-of-page-element {
+    background-color: #FFB6C1;
+    border: 1px dashed black;
+    padding: 5px;
 }
 

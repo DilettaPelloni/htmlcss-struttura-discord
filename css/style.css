@@ -20,10 +20,9 @@ ul {
 }
 
 /* HEADER */
-header {
+body > header {
     padding: 15px;
 }
-
 
 header > div > * {
     padding: 5px;
@@ -44,6 +43,14 @@ nav {
 
 nav li {
     display: inline-block;
+}
+
+/* ------- MAIN ------- */
+
+/* HEADER DEL MAIN */
+main header {
+    padding: 30px;
+    justify-content: center;
 }
 
 
@@ -70,4 +77,14 @@ nav li {
 .debug header div nav {
     background-color: goldenrod;
     border: 1px dashed black;
+}
+
+.debug main header {
+    background-color: blue;
+}
+
+.debug main header div {
+    background-color: pink;
+    min-height: 300px;
+    width: 700px;
 }

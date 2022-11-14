@@ -5,6 +5,50 @@
     box-sizing: border-box;
 }
 
+/* REGOLE GENERALI */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* HEADER */
+header {
+    padding: 15px;
+}
+
+
+header > div > * {
+    padding: 5px;
+}
+
+.side-element {
+    width: 20%;
+}
+
+.side-element.right {
+    text-align: right;
+}
+
+nav {
+    width: 60%;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+
+
+
 
 
 
@@ -18,3 +62,12 @@
 
 
 /* DEBUG */
+.debug header {
+    background-color: lightblue;
+}
+
+.debug header div div,
+.debug header div nav {
+    background-color: goldenrod;
+    border: 1px dashed black;
+}

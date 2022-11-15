@@ -20,11 +20,11 @@ ul {
 }
 
 /* HEADER */
-body > header {
+.header-top {
     padding: 15px;
 }
 
-header > div > * {
+.header-top > * {
     padding: 5px;
 }
 
@@ -32,7 +32,7 @@ header > div > * {
     width: 20%;
 }
 
-.side-element.right {
+.header-top div:last-child {
     text-align: right;
 }
 
@@ -45,14 +45,12 @@ nav li {
     display: inline-block;
 }
 
-/* ------- MAIN ------- */
-
-/* HEADER DEL MAIN */
-main header {
+.header-bottom {
     padding: 30px 0;
     justify-content: center;
 }
 
+/* ------- MAIN ------- */
 /* SEZIONI */
 main > section {
     padding: 30px 0;
@@ -70,10 +68,10 @@ main > section:nth-of-type(even) {
     width: 40%;
 }
 
-/* FOOTER */
+/* ------- FOOTER ------- */
 footer {
     background-color: #23272A;
-    padding: 10px 0;
+    padding-top: 10px;
 }
 
 footer > hr {
@@ -89,10 +87,10 @@ footer > hr {
 }
 
 .list-box div {
-    width: calc(100%/4);
+    width: 25%;
 }
 
-.end-of-page {
+.footer-bottom {
     padding: 10px 0;
     justify-content: space-between;
     align-items: center;
@@ -127,11 +125,11 @@ footer > hr {
     border: 1px dashed black;
 }
 
-.debug main header {
-    background-color: blue;
+.debug .header-bottom {
+    background-color: darkblue;
 }
 
-.debug main header div {
+.debug .jumbotron {
     background-color: #EE82EE;
     border: 1px dashed black;
     min-height: 300px;
@@ -172,11 +170,11 @@ footer > hr {
     min-height: 300px;
 }
 
-.debug .end-of-page {
+.debug .footer-bottom {
     background-color: #7FFFD4;
 }
 
-.debug .end-of-page-element {
+.debug .footer-bottom > * {
     background-color: #FFB6C1;
     border: 1px dashed black;
     padding: 5px;
